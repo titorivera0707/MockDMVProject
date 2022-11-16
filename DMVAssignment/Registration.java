@@ -20,7 +20,7 @@ public class Registration {
         super();
         this.car = car;
         this.owner = owner;
-        this.licenseNumber = licenseNumber;
+        this.licenseNumber = "LIC" + licenseCounter;
         Calendar c = Calendar.getInstance();
         c.set(Calendar.MONTH, c.get(Calendar.MONTH) + DEFAULT_EXPIRY);
         this.expiryDate = c.getTime();

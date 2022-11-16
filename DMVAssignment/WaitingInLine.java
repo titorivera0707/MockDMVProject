@@ -19,6 +19,7 @@ public class WaitingInLine {
         if (userNumber == 1) {
             Person newPerson = new Person(null, null, null);
             Car carAdd = new Car(null, null, null);
+            Registration newReg = new Registration(null, null);
             System.out.print("Enter name: ");
             newPerson.setName(keyboard.nextLine());
             System.out.print("Enter email: ");
@@ -32,6 +33,8 @@ public class WaitingInLine {
             carAdd.setModel(keyboard.nextLine());
             System.out.print("Car Color : ");
             carAdd.setColor(keyboard.nextLine());
+
+            System.println("Thank you, the license number is " + newReg.getLicenseNumber());
 
         }
 
