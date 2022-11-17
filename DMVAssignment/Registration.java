@@ -8,7 +8,7 @@ import javax.swing.event.CaretListener;
 public class Registration {
 
     private static final int DEFAULT_EXPIRY = 6;
-    private static int licenseCounter = 1000;
+    private static int licenseCounter = 1234;
     private static final long SIX_MONTHS = 1555200000;
     private Car car;
     private Person owner;
@@ -20,7 +20,7 @@ public class Registration {
         super();
         this.car = car;
         this.owner = owner;
-        this.licenseNumber = "LIC" + licenseCounter;
+        this.licenseNumber = "LIC" + licenseCounter++;
         Calendar c = Calendar.getInstance();
         c.set(Calendar.MONTH, c.get(Calendar.MONTH) + DEFAULT_EXPIRY);
         this.expiryDate = c.getTime();
@@ -52,9 +52,6 @@ public class Registration {
 
     public Date getDate() {
         return expiryDate;
-    }
-    public void setDate(String expiryDate) {
-        this.expiryDate = expiryDate;
     }
 
     public String toString() {
