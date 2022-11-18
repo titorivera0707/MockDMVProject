@@ -25,8 +25,9 @@ public class WaitingInLine {
                 Person newPerson = new Person(null, null, null);
                 Car carAdd = new Car(null, null, null);
                 Registration newReg = new Registration(null, null);
+                keyboard.nextLine();
                 System.out.print("Enter name: ");
-                newPerson.setName(keyboard.next());
+                newPerson.setName(keyboard.nextLine());
                 System.out.print("Enter email: ");
                 newPerson.setEmail(keyboard.next());
                 System.out.print("Phone number: ");
@@ -38,7 +39,7 @@ public class WaitingInLine {
                 carAdd.setModel(keyboard.next());
                 System.out.print("Car Color : ");
                 carAdd.setColor(keyboard.next());
-                System.out.print("Car VIN : (Must start with VIN)");
+                System.out.print("Car VIN : (Must start with VIN and include 4 numbers)");
                 carAdd.setVIN(keyboard.next());
 
 
@@ -57,7 +58,7 @@ public class WaitingInLine {
             }
 
             else if(userNumber == 3) {
-                //Print DMV report
+                System.out.println(DMV.getAll());
             }
 
             else{

@@ -37,7 +37,7 @@ public class Person {
 	
 	public String toString() {
 		
-		return name+" : "+email+" : "+phoneNumber;
+		return "Owner Name: "+name+"\nOwner Email: "+email+"\nOwner Number: "+phoneNumber;
 		
 	}
 

@@ -1,5 +1,7 @@
 //Tito Rivera trivera26@toromail.csudh.edu
-import java.io;
+
+import java.io.*;
+import java.util.*;
 
 public class DMV {
 
@@ -27,6 +29,12 @@ public class DMV {
         }
 
         return null;
+
+    }
+
+    public static String getAll() {
+
+        return reg.toString();
 
     }
 

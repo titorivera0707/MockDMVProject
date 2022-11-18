@@ -57,7 +57,7 @@ public class Registration {
     public String toString() {
         
         SimpleDateFormat dt = new SimpleDateFormat("MM/dd/yyyy");
-        return car.toString()+"\n"+owner.toString()+"\nLicenseNumber : "+licenseNumber+"\n"+dt.format(expiryDate);
+        return car.toString()+"\n"+owner.toString()+"\nLicenseNumber : "+licenseNumber+"\nExpires: "+dt.format(expiryDate);
 
     }
 }
